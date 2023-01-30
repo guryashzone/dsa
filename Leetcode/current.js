@@ -1,17 +1,11 @@
-
 /**
- * @param {number[]} nums
- * @return {number}
+ * @param {number[]} digits
+ * @return {number[]}
  */
-var removeDuplicates = function (nums) {
-  for (let i = 0; i < nums.length - 1; i++) {
-    if (nums[i] === nums[i + 1]) {
-      nums.splice(i, 1)[0];
-      i--;
-    }
-  }
-
-  return nums.length;
+var plusOne = function (digits) {
+  let num = BigInt(digits.join(''));
+  num = num + BigInt(1);
+  return num.toString().split('');
 };
 
-removeDuplicates([1, 1, 2]);
+console.log('plusOne', plusOne([6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 3]));

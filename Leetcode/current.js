@@ -1,11 +1,16 @@
 /**
- * @param {number[]} digits
- * @return {number[]}
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
  */
-var plusOne = function (digits) {
-  let num = BigInt(digits.join(''));
-  num = num + BigInt(1);
-  return num.toString().split('');
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates = function (head) {
+
 };
 
-console.log('plusOne', plusOne([6, 1, 4, 5, 3, 9, 0, 1, 9, 5, 1, 8, 6, 7, 0, 5, 5, 4, 3]));
+console.log('deleteDuplicates', deleteDuplicates());
